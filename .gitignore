@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+tmp
+
+# Rust / Cargo / Tauri
+target
+src-tauri/target
+src-tauri/gen
+src-tauri/.cargo-lock
+*.rs.bk
+
+# Tauri bundle outputs
+src-tauri/target/release/bundle
+src-tauri/target/debug/bundle
+*.AppImage
+*.deb
+*.msi
+*.dmg
+*.app
+*.exe
+
+# Editor directories and files
+.vscode/
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local tool configuration
+.cargo/
