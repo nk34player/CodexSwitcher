@@ -15,10 +15,10 @@ CodexSwitcher is a local-first profile and account switcher for the official Ope
   - Dark-mode-first styling with neon blue accents and glassmorphic cards
   - Roomier high-aspect-ratio layouts with stricter minimum window height constraints
   - Micro-animated loading and metrics feedback for smoother state transitions
-- **Linux desktop integration**
-  - XDG-aware configuration storage under `~/.config/codex-switcher/`
-  - Active Codex session detection and switching against `~/.codex/`
-  - Secret Service keychain integration through `keyring` + `libsecret`
+- **Cross-platform desktop integration**
+  - XDG-aware configuration storage on Linux under `~/.config/codex-switcher/`
+  - Native Codex session detection and switching across macOS, Windows, and Linux
+  - Platform keychain integration through `keyring`, including Secret Service support on Linux
 
 ### Boot and Data Hydration
 
