@@ -20,10 +20,6 @@ CodexSwitcher is a local-first profile and account switcher for the official Ope
   - Native Codex session detection and switching across macOS, Windows, and Linux
   - Platform keychain integration through `keyring`, including Secret Service support on Linux
 
-### Boot and Data Hydration
-
-CodexSwitcher now uses a synchronized boot flow. If saved profiles already exist, the app stays on the loading gear screen until backend hydration finishes reading local profile metadata, parsing SQLite analytics, and decoding offline auth claims. During that sequence, the UI shows friendly status text such as reading saved profiles, syncing local analytics, and polishing the dashboard so the first screen transition feels intentional rather than abrupt.
-
 ---
 
 ## 🔒 Security Model
@@ -35,7 +31,6 @@ CodexSwitcher now uses a synchronized boot flow. If saved profiles already exist
    - macOS: Keychain Services
    - Windows: Credential Manager
    - Linux: Secret Service / `libsecret`
-   - On Linux, CodexSwitcher now reports a clear error if no Secret Service daemon is available, which commonly happens on headless sessions or minimal desktop environments without `gnome-keyring` or `kwallet`.
 3. **Zero secrets in logs**
    - The local activity log tracks app actions while filtering sensitive values such as tokens, passwords, cookies, and email addresses.
 4. **Safe file operations**
